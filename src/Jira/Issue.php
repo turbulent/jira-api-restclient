@@ -262,7 +262,7 @@ class Issue
 	 */
 	public function getFixVersions()
 	{
-		return $this->get('Fix Version/s');
+		return $this->get('Fix Version/s') ?: $this->get('Fix versions');
 	}
 
 	/**
